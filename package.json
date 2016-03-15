@@ -7,7 +7,7 @@
     "node": "4.3.x"
   },
   "scripts": {
-    "compile": "babel -d lib/ src/ --presets es2015",
+    "compile": "babel -d lib/ src/ --presets es2015,react",
     "prepublish": "npm run compile"
   },
   "author": "Eric Nograles",
