@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "A common set of backend glue code that can be applied across React applications",
   "main": "index.js",
+  "engines": {
+    "node": "4.3.x"
+  },
   "scripts": {
-    "test": "npm test"
+    "compile": "babel -d lib/ src/ --presets es2015",
+    "prepublish": "npm run compile"
   },
   "author": "Eric Nograles",
   "license": "MIT",
