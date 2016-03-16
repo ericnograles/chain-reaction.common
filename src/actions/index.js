@@ -28,7 +28,7 @@ export function requestLogin(email) {
   };
 }
 
-function receiveLogin(email, response) {
+export function receiveLogin(email, response) {
   return {
     type: RECEIVE_LOGIN,
     email: email,
