@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/constants/api.js"],"names":[],"mappings":";;;;;AAAO,IAAM,oBAAM;AACjB,UAAQ,QAAR;AACA,UAAQ;AACN,UAAM;AACJ,aAAO,aAAP;KADF;GADF;CAFW","file":"api.js","sourcesContent":["export const api = {\n  SERVER: API_PATH,\n  ROUTES: {\n    USER: {\n      LOGIN: '/user/login'\n    }\n  }\n};"]}
