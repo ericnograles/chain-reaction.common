@@ -1,5 +1,5 @@
 import fetch from 'isomorphic-fetch';
-import * as FirebaseService from '../services/firebase';
+import * as API from '../services/api';
 
 export const KEYPRESS_EMAIL = 'KEYPRESS_EMAIL';
 export const KEYPRESS_PASSWORD = 'KEYPRESS_PASSWORD';
@@ -40,7 +40,7 @@ export function receiveLogin(email, response) {
 export function login(email, password) {
   return dispatch => {
     dispatch(requestLogin(email));
-    return FirebaseService.login(email, password)
+    return API.UserService.login(email, password)
       .then(json => dispatch(receiveLogin(email, {data: json})))
       .catch(error => dispatch(receiveLogin(email, {error: error})));
   }

@@ -42,6 +42,7 @@ export function user(state = InitialStates.user, action) {
       });
     case LOGOUT:
       return Object.assign({}, state, {
+        status: 'unauthenticated',
         email: null,
         profile: null
       });

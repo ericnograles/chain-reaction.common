@@ -1,1 +1,1 @@
-export let firebase = require('./firebase');
+export let API = require('./api');

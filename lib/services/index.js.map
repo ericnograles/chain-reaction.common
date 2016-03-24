@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../src/services/index.js"],"names":[],"mappings":";;;;;AAAO,IAAI,8BAAW,QAAQ,YAAR,CAAX","file":"index.js","sourcesContent":["export let firebase = require('./firebase');"]}
+{"version":3,"sources":["../../src/services/index.js"],"names":[],"mappings":";;;;;AAAO,IAAI,oBAAM,QAAQ,OAAR,CAAN","file":"index.js","sourcesContent":["export let API = require('./api');"]}

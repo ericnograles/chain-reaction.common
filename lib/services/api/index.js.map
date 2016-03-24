@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../../src/services/api/index.js"],"names":[],"mappings":";;;;;AAAO,IAAI,sBAAO,QAAQ,QAAR,CAAP","file":"index.js","sourcesContent":["export let user = require('./user');"]}
+{"version":3,"sources":["../../../src/services/api/index.js"],"names":[],"mappings":";;;;;AAAO,IAAI,oCAAc,QAAQ,QAAR,CAAd","file":"index.js","sourcesContent":["export let UserService = require('./user');"]}

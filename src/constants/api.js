@@ -1,8 +1,6 @@
-export const api = {
-  SERVER: API_PATH,
-  ROUTES: {
+export let SERVER = API_PATH;
+export let ROUTES = {
     USER: {
       LOGIN: '/user/login'
     }
-  }
 };

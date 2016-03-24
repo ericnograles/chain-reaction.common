@@ -1,1 +1,1 @@
-export let user = require('./user');
+export let UserService = require('./user');
