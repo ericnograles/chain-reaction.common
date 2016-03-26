@@ -7,9 +7,10 @@
     "node": "4.3.x"
   },
   "scripts": {
-    "compile": "babel -d lib/ src/ --presets es2015,react -s",
+    "compile": "npm test; babel -d lib/ src/ --presets es2015,react -s",
     "prepublish": "npm run compile",
-    "dev": "nodemon --watch ./src --exec \"npm run compile\""
+    "dev": "nodemon --watch ./src --exec \"npm run compile\"",
+    "test": "mocha --compilers js:babel-core/register ./src/**/*.test.js"
   },
   "author": "Eric Nograles",
   "license": "MIT",
@@ -27,6 +28,8 @@
     "webpack": "^1.12.14"
   },
   "devDependencies": {
+    "expect": "^1.16.0",
+    "mocha": "^2.4.5",
     "nodemon": "^1.9.1"
   }
 }
