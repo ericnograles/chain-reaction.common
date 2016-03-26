@@ -9,7 +9,7 @@ import { APIConstants } from '../../constants';
 export function login(email, password) {
   return new Promise(
     (resolve, reject) => {
-      var url = APIConstants.SERVER + APIConstants.ROUTES.USER.LOGIN;
+      var url = APIConstants.SERVER() + APIConstants.ROUTES.USER.LOGIN;
       fetch(url, {
         method: 'POST',
         headers: {
