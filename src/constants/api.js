@@ -1,4 +1,4 @@
-export let SERVER = 'http://localhost:1337';
+export let SERVER = window.API_PATH;
 export let ROUTES = {
     USER: {
       LOGIN: '/user/login'
