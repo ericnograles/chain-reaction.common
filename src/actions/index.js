@@ -1,4 +1,3 @@
-import fetch from 'isomorphic-fetch';
 import * as API from '../services/api';
 
 export const KEYPRESS_EMAIL = 'KEYPRESS_EMAIL';
