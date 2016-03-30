@@ -16,7 +16,7 @@ describe('meme reducer', () => {
       'http://memesvault.com/wp-content/uploads/I-Have-No-Idea-What-Im-Doing-Dog-02.jpg'
     ];
     var state = memes(null, {type: FIND_MEMES, memes: newMemes});
-    expect(state.memes.length).toBe(newMemes.length, 'Invalid memes');
+    expect(state.results.length).toBe(newMemes.length, 'Invalid memes');
   });
 
   it('should handle an error', () => {

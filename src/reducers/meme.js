@@ -6,7 +6,7 @@ export function memes(state = null, action) {
   switch (action.type)  {
     case FIND_MEMES:
       return Object.assign({}, state, {
-        memes: action.memes,
+        results: action.memes,
         error: action.error
       });
     default:
