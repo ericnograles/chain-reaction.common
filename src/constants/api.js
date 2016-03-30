@@ -3,7 +3,10 @@ export let SERVER = () => {
 };
 
 export let ROUTES = {
-    USER: {
-      LOGIN: '/user/login'
-    }
+  USER: {
+    LOGIN: '/user/login'
+  },
+  MEME:  {
+    FIND: '/meme/all'
+  }
 };

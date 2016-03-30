@@ -10,7 +10,7 @@ import {
 
 import expect from 'expect';
 
-describe('reducers', () => {
+describe('user reducer', () => {
   it('should handle an email keypress', () => {
     var enteredEmail = 'testy@test.org';
     var state = email(null, {type: KEYPRESS_EMAIL, email: enteredEmail});

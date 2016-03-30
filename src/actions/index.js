@@ -5,6 +5,7 @@ export const KEYPRESS_PASSWORD = 'KEYPRESS_PASSWORD';
 export const REQUEST_LOGIN = 'REQUEST_LOGIN';
 export const RECEIVE_LOGIN = 'RECEIVE_LOGIN';
 export const LOGOUT = 'LOGOUT';
+export const FIND_MEMES = 'FIND_MEMES';
 
 export function keyPressEmail(email) {
   return {
@@ -49,4 +50,18 @@ export function logout() {
   return {
     type: LOGOUT
   };
+}
+
+export function findMemes() {
+  return dispatch => {
+    return API.MemeService.find()
+      .then(memes => dispatch({
+        type: FIND_MEMES,
+        memes: memes
+      }))
+      .catch(error => dispatch({
+        type: FIND_MEMES,
+        error: error
+      }));
+  }
 }
