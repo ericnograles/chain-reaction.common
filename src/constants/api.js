@@ -7,6 +7,6 @@ export let ROUTES = {
     LOGIN: '/user/login'
   },
   MEME:  {
-    FIND: '/meme/all'
+    FIND: '/meme/find'
   }
 };
