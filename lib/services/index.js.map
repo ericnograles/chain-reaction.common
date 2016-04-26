@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../src/services/index.js"],"names":[],"mappings":";;;;;AAAO,IAAI,oBAAM,QAAQ,OAAR,CAAN","file":"index.js","sourcesContent":["export let API = require('./api');"]}
+{"version":3,"sources":["../../src/services/index.js"],"names":[],"mappings":";;;;;AAAO,IAAI,oBAAM,QAAQ,OAAR,CAAV","file":"index.js","sourcesContent":["export let API = require('./api');"]}
